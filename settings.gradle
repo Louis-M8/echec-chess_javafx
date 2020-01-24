@@ -1,0 +1,3 @@
+rootProject.name = 'echec-chess_javafx'
+include ':commun'
+project(':commun').projectDir = file('../tutoriels_java/commun')
