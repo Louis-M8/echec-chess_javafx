@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import echec_chess_javafx.vues.composantes.CaseAjustable?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal">
+
+	<VBox styleClass="conteneurBoite" VBox.vgrow="ALWAYS" >
+		<HBox styleClass="conteneurTraduction">
+			<Text text="ChoisissezVotreNiveauDeDifficulte"/>
 
 
-<VBox xmlns:fx="http://javafx.com/fxml">
-	<Text text="Echec/Chess"/>
+
+			<VBox styleClass="conteneurBoutons">
+				<VBox styleClass="conteneurBouton1">
+					<Button styleClass="boutonCoup" text="Facile"/>
+				</VBox>
+				<VBox styleClass="conteneurBouton2" >
+					<Button styleClass="boutonCoup" text="Moyen"/>
+				</VBox>
+				<VBox styleClass="conteneurBouton3 " >
+					<Button styleClass="boutonCoup" text="Difficile"/>
+				</VBox>
+				<VBox styleClass="conteneurBouton4" >
+					<Button styleClass="boutonCoup" text="Maitre"/>
+				</VBox>
+			</VBox>
+		</HBox>
+		<HBox styleClass="conteneurImage" VBox.vgrow="ALWAYS">
+			<CaseAjustable url="/images/chess.png" HBox.hgrow="ALWAYS" styleClass="caseAjustable"/>
+		</HBox>
+
+
+	</VBox>        
 </VBox>
