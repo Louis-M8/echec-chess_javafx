@@ -31,11 +31,7 @@
 
 .conteneurImage{ 
 
-	-fx-min-height:150px;
-	-fx-max-height:150px;
-	-fx-min-width:270px;
-	-fx-max-width:270px;
-    
+	
 	/*
     -fx-background-size: 200px;
     -fx-background-repeat: no-repeat;
@@ -52,7 +48,7 @@
 
 .caseAjustable{ 
 -fx-border-style:solid;
--fx-border-color:green;
+-fx-border-color:red;
 -fx-border-width:9px;
 
 }

@@ -7,34 +7,35 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <?import echec_chess_javafx.vues.composantes.CaseAjustable?>
+<?import echec_chess_javafx.vues.composantes.MonBouton?>
 
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal">
 
 	<VBox styleClass="conteneurBoite" VBox.vgrow="ALWAYS" >
-		<HBox styleClass="conteneurTraduction">
-			<Text text="ChoisissezVotreNiveauDeDifficulte"/>
+	<HBox styleClass="conteneurTraduction">
+	<Text text="ChoisissezVotreNiveauDeDifficulte"/>
+	
+            
+    
+	 <VBox styleClass="conteneurBoutons">
+            <VBox styleClass="conteneurBouton1">
+                <MonBouton styleClass="boutonCoup" text="Facile"/>
+            </VBox>
+            <VBox styleClass="conteneurBouton2" >
+                <MonBouton styleClass="boutonCoup" text="Moyen"/>
+            </VBox>
+            <VBox styleClass="conteneurBouton3 " >
+                <MonBouton styleClass="boutonCoup" text="Difficile"/>
+            </VBox>
+             <VBox styleClass="conteneurBouton4" >
+                <MonBouton styleClass="boutonCoup" text="Maitre"/>
+            </VBox>
+        </VBox>
+       </HBox>
+              <HBox styleClass="conteneurImage" VBox.vgrow="ALWAYS">
+              <CaseAjustable url="/images/chess-png-chess-kids-xiangqi-king-chess-900.jpg" HBox.hgrow="ALWAYS"/>
+   			  </HBox>
+             
 
-
-
-			<VBox styleClass="conteneurBoutons">
-				<VBox styleClass="conteneurBouton1">
-					<Button styleClass="boutonCoup" text="Facile"/>
-				</VBox>
-				<VBox styleClass="conteneurBouton2" >
-					<Button styleClass="boutonCoup" text="Moyen"/>
-				</VBox>
-				<VBox styleClass="conteneurBouton3 " >
-					<Button styleClass="boutonCoup" text="Difficile"/>
-				</VBox>
-				<VBox styleClass="conteneurBouton4" >
-					<Button styleClass="boutonCoup" text="Maitre"/>
-				</VBox>
-			</VBox>
-		</HBox>
-		<HBox styleClass="conteneurImage" VBox.vgrow="ALWAYS">
-			<CaseAjustable url="/images/chess.png" HBox.hgrow="ALWAYS" styleClass="caseAjustable"/>
-		</HBox>
-
-
-	</VBox>        
+        </VBox>        
 </VBox>
