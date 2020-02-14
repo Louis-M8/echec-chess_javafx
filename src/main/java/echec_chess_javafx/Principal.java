@@ -3,8 +3,6 @@ package echec_chess_javafx;
 
 
 import commun.debogage.DoitEtre;
-
-
 import commun.debogage.J;
 import commun_javafx.ChargeurDeVue;
 import commun_javafx.Initialisateur;

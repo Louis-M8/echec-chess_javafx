@@ -28,12 +28,12 @@
                 <MonBouton styleClass="boutonCoup" text="Difficile"/>
             </VBox>
              <VBox styleClass="conteneurBouton4" >
-                <MonBouton styleClass="boutonCoup" text="Maitre"/>
+                <MonBouton styleClass="boutonCoup" text="Maître"/>
             </VBox>
         </VBox>
        </HBox>
               <HBox styleClass="conteneurImage" VBox.vgrow="ALWAYS">
-              <CaseAjustable url="/images/chess-png-chess-kids-xiangqi-king-chess-900.jpg" HBox.hgrow="ALWAYS"/>
+              <CaseAjustable url="/images/chEEss.png" HBox.hgrow="ALWAYS"/>
    			  </HBox>
              
 
