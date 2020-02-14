@@ -17,8 +17,9 @@
 -fx-background-color:yellow;
 -fx-font-size:20px;
 
--fx-min-width:600px;
--fx-max-width:600px;
+-fx-min-width:400px;
+-fx-max-width:1000px;
+
 
 }
 .conteneurBoutons{
@@ -31,7 +32,11 @@
 
 .conteneurImage{ 
 
-	
+	-fx-alignment:center;
+
+	-fx-max-height:800px;
+	-fx-max-width:800px;
+    
 	/*
     -fx-background-size: 200px;
     -fx-background-repeat: no-repeat;
@@ -47,6 +52,9 @@
 
 
 .caseAjustable{ 
+	-fx-max-height:600px;
+	-fx-max-width:600px;
+
 -fx-border-style:solid;
 -fx-border-color:red;
 -fx-border-width:9px;
