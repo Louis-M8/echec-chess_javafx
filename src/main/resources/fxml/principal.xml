@@ -10,7 +10,7 @@
 <?import echec_chess_javafx.vues.composantes.MonBouton?>
 
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal">
-
+     
 	<VBox styleClass="conteneurBoite" VBox.vgrow="ALWAYS" >
 	<HBox styleClass="conteneurTraduction">
 	<Text text="ChoisissezVotreNiveauDeDifficulte"/>
