@@ -58,3 +58,18 @@
 
 }
 
+.Rouge{
+-fx-background-color:red;
+}
+
+.Bleu{
+-fx-background-color:blue;
+}
+
+.Vert{
+-fx-background-color:green;
+}
+
+.Orange{
+-fx-background-color:orange;
+}

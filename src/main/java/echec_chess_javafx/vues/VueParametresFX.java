@@ -4,7 +4,7 @@ import java.net.URL;
 
 import java.util.ResourceBundle;
 
-import com.sun.prism.paint.Color;
+
 
 import commun.debogage.DoitEtre;
 import commun.debogage.J;
@@ -13,7 +13,7 @@ import echec_chess_javafx.vues.composantes.MonBouton;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-public  class VueParametresFX implements VueParametres, Initializable {
+public   class VueParametresFX implements VueParametres, Initializable {
 
 	
 	@FXML
@@ -41,27 +41,43 @@ public  class VueParametresFX implements VueParametres, Initializable {
 	
 	public void afficherDifficulte(int nombre){
 		
+		boutonFacile.getStyleClass().remove("Rouge");
+		boutonMoyen.getStyleClass().remove("Bleu");
+		boutonDifficile.getStyleClass().remove("Vert");
+		boutonMaitre.getStyleClass().remove("Orange");
 		switch (nombre) {
 		case 0:
 			
-			boutonFacile.setBackground(null);
+			boutonFacile.getStyleClass().add("Rouge");
 			break;
        
 		case 1:
-			boutonMoyen.setBackground(Color.GREEN);
+			boutonMoyen.getStyleClass().add("Bleu");
 			break;
 			
 		case 2:
-			boutonDifficile.setBackground(Color.BLUE);
+			boutonDifficile.getStyleClass().add("Vert");
 			break;
 			
 		case 3:
-			boutonMaitre.setBackground(Color.RED);
+			boutonMaitre.getStyleClass().add("Orange");
 			break;
 		default:
 			break;
 		}
 		
+		
+	}
+
+	@Override
+	public void obtenirCommandesPourEnvoi() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void installerCapteursEvenementsUsager() {
+		// TODO Auto-generated method stub
 		
 	}
 
