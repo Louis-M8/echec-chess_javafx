@@ -11,6 +11,13 @@ public class AfficheurParametresFX extends AfficheurParametres<VueParametresFX> 
 	public void initialiserAffichage(ParametresLectureSeule modeleLectureSeule, VueParametresFX vue) {
 		J.appel(this);
 		
+		
+		
+		int difficulte = modeleLectureSeule.getDifficulte();
+		
+		vue.afficherDifficulte(difficulte);
+		
+		
 	}
 
 }

@@ -9,8 +9,8 @@
 <?import echec_chess_javafx.vues.composantes.CaseAjustable?>
 <?import echec_chess_javafx.vues.composantes.MonBouton?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal">
-     
+<VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal"
+    fx:controller="echec_chess_javafx.vues.VueParametresFX">
 	<VBox styleClass="conteneurBoite" VBox.vgrow="ALWAYS" >
 	<HBox styleClass="conteneurTraduction">
 	<Text text="ChoisissezVotreNiveauDeDifficulte"/>
@@ -19,16 +19,20 @@
     
 	 <VBox styleClass="conteneurBoutons">
             <VBox styleClass="conteneurBouton1">
-                <MonBouton styleClass="boutonCoup" text="Facile"/>
+                <MonBouton styleClass="boutonCoup"
+                fx:id="boutonFacile" text="Facile"/>
             </VBox>
             <VBox styleClass="conteneurBouton2" >
-                <MonBouton styleClass="boutonCoup" text="Moyen"/>
+                <MonBouton styleClass="boutonCoup"
+                fx:id="boutonMoyen" text="Moyen"/>
             </VBox>
             <VBox styleClass="conteneurBouton3 " >
-                <MonBouton styleClass="boutonCoup" text="Difficile"/>
+                <MonBouton styleClass="boutonCoup"
+                fx:id="boutonDifficile" text="Difficile"/>
             </VBox>
              <VBox styleClass="conteneurBouton4" >
-                <MonBouton styleClass="boutonCoup" text="Maître"/>
+                <MonBouton styleClass="boutonCoup"
+                fx:id="boutonMaitre" text="Maître"/>
             </VBox>
         </VBox>
        </HBox>
