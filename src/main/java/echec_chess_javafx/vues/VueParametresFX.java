@@ -71,13 +71,19 @@ public   class VueParametresFX implements VueParametres, Initializable {
 
 	@Override
 	public void obtenirCommandesPourEnvoi() {
-		// TODO Auto-generated method stub
+		J.appel(this);
 		
 	}
 
 	@Override
 	public void installerCapteursEvenementsUsager() {
-		// TODO Auto-generated method stub
+		J.appel(this);
+		
+	}
+
+	@Override
+	public void verifierCommandesPossibles() {
+		J.appel(this);
 		
 	}
 
