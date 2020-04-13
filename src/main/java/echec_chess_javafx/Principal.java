@@ -3,6 +3,7 @@ package echec_chess_javafx;
 
 
 import commun.debogage.DoitEtre;
+
 import commun.debogage.J;
 import commun_client.mvc.controleurs.FabriqueControleur;
 import commun_javafx.ChargeurDeVue;
