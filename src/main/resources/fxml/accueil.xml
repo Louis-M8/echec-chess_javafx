@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import echec_chess_javafx.vues.composantes.CaseAjustable?>
+<?import echec_chess_javafx.vues.composantes.MonBouton?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal"
+    fx:controller="echec_chess_javafx.vues.VueAccueilFX">
+   <BorderPane VBox.vgrow="ALWAYS">
+        <top>
+            <MenuBar>
+                <menus>
+                <Menu styleClass="menu" text="Menu">
+                    <items>
+                    <MenuItem fx:id="menuNouvellePartie" styleClass="menu_item" text="Nouvelle Partie"/>
+                    <MenuItem fx:id="menuAfficherParametres" styleClass="menu_item" text="Parametres"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="menuQuitter"  styleClass="menu_item" text="Quitter"/>
+                    </items>
+                </Menu>
+            </menus>
+            </MenuBar>
+        </top>
+        <center>
+        	<VBox fx:id="conteneurContenu"/>
+        </center>
+    </BorderPane>
+</VBox>
