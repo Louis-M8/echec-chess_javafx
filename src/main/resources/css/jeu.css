@@ -47,6 +47,17 @@
 
 }
 
+MenuBar,
+ToolBar {
+  -fx-background-color: #bcced6;
+}
+Menu {
+  -fx-background-color: #bcced6;
+}
+MenuItem {
+  -fx-background-color: #bcced6;
+}
+
 
 .caseAjustable{ 
 	-fx-max-height:600px;
