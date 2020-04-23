@@ -12,13 +12,13 @@ public  class AfficheurPartieLocaleFX extends AfficheurPartieLocale<VuePartieLoc
 	@Override
 	public void initialiserAffichage(PartieLocaleLectureSeule modeleLectureSeule, VuePartieLocaleFX vue) {
 		J.appel(this);
-		vue.afficherNombreCoups(modeleLectureSeule.getNombreCoups());
+
 	}
 
 	@Override
 	public void rafraichirAffichage(PartieLocaleLectureSeule modeleLectureSeule, VuePartieLocaleFX vue) {
 		J.appel(this);
-		vue.afficherNombreCoups(modeleLectureSeule.getNombreCoups());
+
 	}
 
 

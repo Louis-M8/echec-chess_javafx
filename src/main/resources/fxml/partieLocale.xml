@@ -6,17 +6,9 @@
 <?import javafx.scene.text.*?>
 <?import echec_chess_javafx.vues.composantes.CaseAjustable?>
 <?import echec_chess_javafx.vues.composantes.MonBouton?>
-<?import javafx.scene.control.Button?>
 
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal"
-    fx:controller="echec_chess_javafx.vues.VuePartieLocaleFX" VBox.vgrow="ALWAYS">
-    <Text fx:id="texteTmpPartieLocale" text=" "/>
-    <Pane VBox.vgrow="ALWAYS"/>
-    <Button fx:id="boutonJouerCoup" text="%boutonJouerCoup"/>
-    <Pane VBox.vgrow="ALWAYS"/>
-    <HBox alignment="center">
-    	<Text text=" "/>
-    	<Text fx:id="texteNombreCoups"/>
-	</HBox>
-    <Pane VBox.vgrow="ALWAYS"/>
+    fx:controller="echec_chess_javafx.vues.VuePartieLocaleFX">
+
+    <Text text="TODO TODO TODO TODO TODO"/>
 </VBox>
