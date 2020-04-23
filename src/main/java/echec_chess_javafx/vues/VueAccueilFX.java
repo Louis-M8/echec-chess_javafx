@@ -17,6 +17,7 @@ import echec_chess_client.commandes.quitter.Quitter;
 import echec_chess_client.commandes.quitter.QuitterPourEnvoi;
 import echec_chess_client.vues.VueAccueil;
 import echec_chess_client.vues.VueParametres;
+import echec_chess_client.vues.VuePartieLocale;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -113,6 +114,24 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 		conteneurContenu.getChildren().add(parent);
 
 		return vuePara;
+	}
+
+
+	@Override
+	public VuePartieLocale creerVuePartieLocale() {
+		J.appel(this);
+
+		ChargeurDeVue<VuePartieLocaleFX> chargeur = new ChargeurDeVue<VuePartieLocaleFX>(CHEMIN_PARTIE_LOCALE_FXML,
+				CHEMIN_CHAINES, CHEMIN_PARTIE_LOCALE_CSS);
+
+		VuePartieLocaleFX vuePartie = chargeur.getVue();
+
+		Parent parent = chargeur.getParent();
+
+		conteneurContenu.getChildren().clear();
+		conteneurContenu.getChildren().add(parent);
+
+		return vuePartie;
 	}
 
 }

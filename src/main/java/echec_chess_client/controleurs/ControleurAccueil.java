@@ -49,7 +49,7 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 			public void executerCommandeMVC(NouvellePartieRecue commande) {
 				J.appel(this);
 				
-				J.valeurs("TODO: créer et afficher une nouvelle partie");
+				nouvellePartieLocale();
 				
 			}
 		});
@@ -68,6 +68,7 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 
 	
 	protected abstract void instancierMVCParametres();
+	protected abstract void nouvellePartieLocale();
 
 
 }

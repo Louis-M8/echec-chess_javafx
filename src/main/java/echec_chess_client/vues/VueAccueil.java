@@ -5,6 +5,7 @@ import commun_client.mvc.Vue;
 public interface VueAccueil extends Vue { 
 	
 	VueParametres creerVueParametres();
+	VuePartieLocale creerVuePartieLocale();
 	
 	
 }
