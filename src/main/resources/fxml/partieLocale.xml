@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import echec_chess_javafx.vues.composantes.CaseAjustable?>
+<?import echec_chess_javafx.vues.composantes.MonBouton?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal"
+    fx:controller="echec_chess_javafx.vues.VuePartieLocaleFX">
+
+    <Text text="TODO TODO TODO TODO TODO"/>
+</VBox>
