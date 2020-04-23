@@ -4,13 +4,16 @@ package echec_chess_javafx;
 
 import commun.debogage.DoitEtre;
 
+
 import commun.debogage.J;
 import commun_client.mvc.controleurs.FabriqueControleur;
 import commun_javafx.ChargeurDeVue;
 import commun_javafx.Initialisateur;
 import echec_chess.modeles.difficultes.Parametres;
 import echec_chess_javafx.afficheurs.AfficheurParametresFX;
+import echec_chess_javafx.controleurs.ControleurAccueilFX;
 import echec_chess_javafx.controleurs.ControleursParametresFX;
+import echec_chess_javafx.vues.VueAccueilFX;
 import echec_chess_javafx.vues.VueParametresFX;
 
 import static echec_chess_javafx.Constantes.*;
@@ -70,20 +73,17 @@ public class Principal extends Application{
 	private Scene creerScenePrincipale() {
 		J.appel(this);
 		
-		ChargeurDeVue <VueParametresFX>chargeur;
-		chargeur = new ChargeurDeVue<VueParametresFX>(CHEMIN_PARTIE_LOCALE_FXML,
+		ChargeurDeVue <VueAccueilFX>chargeur;
+		chargeur = new ChargeurDeVue<VueAccueilFX>(CHEMIN_ACCUEIL_FXML,
 				CHEMIN_CHAINES,
-				CHEMIN_PARTIE_LOCALE_CSS);
+				CHEMIN_ACCUEIL_CSS);
 		
-		VueParametresFX vue = chargeur.getVue();
+		VueAccueilFX vue = chargeur.getVue();
 		
 		DoitEtre.nonNul(vue);
 		
-		Parametres parametre = new Parametres();
 		
-		AfficheurParametresFX afficheur =  new AfficheurParametresFX();
-		
-		FabriqueControleur.creerControleur(ControleursParametresFX.class, parametre, vue, afficheur);
+		FabriqueControleur.creerControleur(ControleurAccueilFX.class, vue);
 		
 		
 		Scene scene = chargeur.nouvelleScene(LARGEUR_SCENE, HAUTEUR_SCENE);
