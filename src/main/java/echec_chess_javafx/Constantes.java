@@ -6,9 +6,6 @@ public class Constantes {
 	public static final String CHEMIN_ACCUEIL_FXML = "/fxml/accueil.xml";
     public static final String CHEMIN_ACCUEIL_CSS = "/css/acceuil.css";
 	
-	public static final String CHEMIN_ACCUEIL_FXML = "/fxml/accueil.xml";
-    public static final String CHEMIN_ACCUEIL_CSS = "/css/acceuil.css";
-	
 	public static final String CHEMIN_PARAMETRES_FXML = "/fxml/parametres.xml";
     public static final String CHEMIN_PARAMETRES_CSS = "/css/parametres.css";
     
