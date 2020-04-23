@@ -1,6 +1,7 @@
 package echec_chess_javafx.vues;
 
 
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import commun.debogage.DoitEtre;
@@ -9,16 +10,13 @@ import echec_chess_client.vues.VueParametres;
 import echec_chess_javafx.vues.composantes.MonBouton;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.layout.VBox;
 import echec_chess_javafx.vues.VueParametresFX;
 
 
 
 public class VueParametresFX implements VueParametres, Initializable {
 
-	@FXML
-	VBox conteneurBoite;
-
+	
 	@FXML
 	MonBouton boutonFacile;
 	
@@ -76,11 +74,11 @@ public class VueParametresFX implements VueParametres, Initializable {
 	public void obtenirCommandesPourEnvoi() {
 		J.appel(this);
 		
+		
 	}
 
 	@Override
 	public void installerCapteursEvenementsUsager() {
-		J.appel(this);
 		
 	}
 
@@ -89,6 +87,9 @@ public class VueParametresFX implements VueParametres, Initializable {
 		J.appel(this);
 		
 	}
+
+	
+
 	
 
 
