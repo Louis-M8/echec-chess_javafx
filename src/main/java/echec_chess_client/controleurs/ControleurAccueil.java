@@ -5,6 +5,7 @@ import commun.systeme.Systeme;
 import commun_client.mvc.controleurs.ControleurVue;
 import commun_client.mvc.controleurs.RecepteurCommandeMVC;
 import echec_chess.modeles.difficultes.Parametres;
+import echec_chess.modeles.partie_locale.PartieLocale;
 import echec_chess_client.commandes.afficher_parametres.AfficherParametres;
 import echec_chess_client.commandes.afficher_parametres.AfficherParametresRecue;
 import echec_chess_client.commandes.nouvelle_partie.NouvellePartie;
@@ -16,6 +17,8 @@ import echec_chess_client.vues.VueAccueil;
 public abstract class ControleurAccueil<V extends VueAccueil> extends ControleurVue<V> {
 	
 	protected Parametres para;
+	protected PartieLocale partie;
+
 
 	@Override
 	protected void demarrer() {
@@ -50,7 +53,6 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 				J.appel(this);
 				
 				nouvellePartieLocale();
-				
 			}
 		});
 		
@@ -67,8 +69,16 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 	}
 
 	
+	protected void nouvellePartieLocale() {
+		
+		partie = new PartieLocale();
+		instancierMVCPartieLocale();
+		
+	}
+
 	protected abstract void instancierMVCParametres();
-	protected abstract void nouvellePartieLocale();
+	protected abstract void instancierMVCPartieLocale();
+	
 
 
 }

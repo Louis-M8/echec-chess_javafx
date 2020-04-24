@@ -6,10 +6,8 @@ import java.util.List;
 import commun.debogage.J;
 import commun.modeles.Modele;
 
-public class       PartieLocale 
-       extends     Modele<PartieLocaleLectureSeule> 
-	   implements  PartieLocaleLectureSeule {
-	
+public class PartieLocale extends Modele<PartieLocaleLectureSeule> implements PartieLocaleLectureSeule {
+
 	private List<Integer> lesCoups = new ArrayList<>();
 
 	public void jouerCoup(int infoCoup) {
@@ -24,5 +22,4 @@ public class       PartieLocale
 
 		return lesCoups.size();
 	}
-
 }

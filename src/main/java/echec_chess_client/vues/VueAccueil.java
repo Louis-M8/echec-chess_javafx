@@ -7,5 +7,4 @@ public interface VueAccueil extends Vue {
 	VueParametres creerVueParametres();
 	VuePartieLocale creerVuePartieLocale();
 	
-	
 }
