@@ -4,6 +4,7 @@ import commun_client.mvc.Vue;
 
 public interface VuePartieLocale extends Vue {
 
-	void afficherNombreCoups(int nombreCoups);
+	
+	// TODO: ajouter une méthode d'affichage
 
 }

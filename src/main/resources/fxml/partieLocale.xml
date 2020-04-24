@@ -11,14 +11,6 @@
       fx:controller="echec_chess_javafx.vues.VuePartieLocaleFX"
       VBox.vgrow="ALWAYS">
 
-    <Text fx:id="texteTmpPartieLocale" text=" "/>
-    <Pane VBox.vgrow="ALWAYS"/>
-    <Button fx:id="boutonJouerCoup" text="%boutonJouerCoup"/>
-    <Pane VBox.vgrow="ALWAYS"/>
-    <HBox alignment="center">
-    	<Text text=" "/>
-    	<Text fx:id="texteNombreCoups"/>
-	</HBox>
-    <Pane VBox.vgrow="ALWAYS"/>
+    <Text fx:id="tmp" text="TODO TODO TODO TODO TODO TODO TODO TODO"/>
 
 </VBox>

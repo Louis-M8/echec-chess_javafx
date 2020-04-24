@@ -14,14 +14,14 @@ public abstract class AfficheurPartieLocale<V extends VuePartieLocale>
 	@Override
 	public void initialiserAffichage(PartieLocaleLectureSeule partieLectureSeule, VuePartieLocale vue) {
 		J.appel(this);
-
-		vue.afficherNombreCoups(partieLectureSeule.getNombreCoups());
 	}
 
 	@Override
 	public void rafraichirAffichage(PartieLocaleLectureSeule partieLectureSeule, VuePartieLocale vue) {
 		J.appel(this);
+		
+		// TODO: appeler le modele pour récupérer l'info à afficher
 
-		vue.afficherNombreCoups(partieLectureSeule.getNombreCoups());
+		// TODO: appeler la vue pour afficher cette info
 	}
 }

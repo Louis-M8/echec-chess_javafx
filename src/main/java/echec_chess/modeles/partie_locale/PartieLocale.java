@@ -7,19 +7,7 @@ import commun.debogage.J;
 import commun.modeles.Modele;
 
 public class PartieLocale extends Modele<PartieLocaleLectureSeule> implements PartieLocaleLectureSeule {
+	
+	// TODO: stoquer de l'information sur la partie
 
-	private List<Integer> lesCoups = new ArrayList<>();
-
-	public void jouerCoup(int infoCoup) {
-		J.appel(this);
-
-		lesCoups.add(infoCoup);
-	}
-
-	@Override
-	public int getNombreCoups() {
-		J.appel(this);
-
-		return lesCoups.size();
-	}
 }
