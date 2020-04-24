@@ -1,0 +1,90 @@
+.conteneurPrincipal{
+-fx-alignment:center;
+-fx-border-style:solid;
+-fx-font-style:italic;
+-fx-border-width:9px;
+-fx-background-image: url('/images/chessTable.jpg');
+-fx-font-size:20px;
+	
+
+}
+
+.conteneurContenu{
+-fx-alignment:center;
+-fx-border-style:solid;
+-fx-border-color:green;
+-fx-border-width:9px;
+-fx-background-color:yellow;
+-fx-font-size:20px;
+
+-fx-min-width:400px;
+-fx-max-width:1000px;
+
+
+}
+.conteneurBoutons{
+
+
+}
+
+.echec{
+-fx-font-size:155px;
+-fx-font-color:#8a0303;
+}
+
+
+
+.conteneurImage{ 
+
+	-fx-alignment:center;
+
+	-fx-max-height:800px;
+	-fx-max-width:800px;
+    
+	/*
+    -fx-background-size: 200px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:90%;
+    */ 
+
+    
+
+}
+
+MenuBar,
+ToolBar {
+  -fx-background-color: #bcced6;
+}
+Menu {
+  -fx-background-color: #bcced6;
+}
+MenuItem {
+  -fx-background-color: #bcced6;
+}
+
+
+.caseAjustable{ 
+	-fx-max-height:600px;
+	-fx-max-width:600px;
+
+-fx-border-style:solid;
+-fx-border-color:red;
+-fx-border-width:9px;
+
+}
+
+.Rouge{
+-fx-background-color:red;
+}
+
+.Bleu{
+-fx-background-color:blue;
+}
+
+.Vert{
+-fx-background-color:green;
+}
+
+.Orange{
+-fx-background-color:orange;
+}
