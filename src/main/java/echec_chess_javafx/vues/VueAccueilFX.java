@@ -30,20 +30,20 @@ import javafx.scene.layout.VBox;
 public class VueAccueilFX implements VueAccueil, Initializable {
 
 	@FXML
-	private MenuItem menuNouvellePartie, menuAfficherParametres, menuQuitter;
+	private MenuItem  menuAfficherParametres, menuQuitter;
 	
 	@FXML
 	private VBox conteneurContenu, conteneurPartie;
 
 	private QuitterPourEnvoi quitterPourEnvoi;
-	private NouvellePartiePourEnvoi nouvellePartiePourEnvoi;
+	
 	private AfficherParametresPourEnvoi afficherParametresPourEnvoi;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		J.appel(this);
 		
-		DoitEtre.nonNul(menuNouvellePartie);
+	
 		DoitEtre.nonNul(menuAfficherParametres);
 		DoitEtre.nonNul(menuQuitter);
 		DoitEtre.nonNul(conteneurContenu);
@@ -56,7 +56,6 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 		J.appel(this);
 
 		quitterPourEnvoi = FabriqueCommande.obtenirCommandePourEnvoi(Quitter.class);
-		nouvellePartiePourEnvoi = FabriqueCommande.obtenirCommandePourEnvoi(NouvellePartie.class);
 		afficherParametresPourEnvoi = FabriqueCommande.obtenirCommandePourEnvoi(AfficherParametres.class);
 	}
 	@Override
@@ -72,14 +71,7 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 			}
 		});
 		
-		menuNouvellePartie.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				J.appel(this);
-				
-				nouvellePartiePourEnvoi.envoyerCommande();
-			}
-		});
+		
 
 		menuQuitter.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
