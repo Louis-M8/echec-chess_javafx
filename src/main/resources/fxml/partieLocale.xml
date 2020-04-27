@@ -11,9 +11,8 @@
       fx:controller="echec_chess_javafx.vues.VuePartieLocaleFX"
       VBox.vgrow="ALWAYS">
 
-    <Text  styleClass="echec1" text="%echec1"/>
-	<GridPane>
-	</GridPane>
-	<Text  styleClass="echec2" text="%echec2"/>
+	<Button fx:id="case01" text=""/>
+	<Button fx:id="case02" text="%pion"/>
+	<Button fx:id="case03" text=""/>
 
 </VBox>

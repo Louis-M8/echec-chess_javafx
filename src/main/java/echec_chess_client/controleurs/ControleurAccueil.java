@@ -47,7 +47,14 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 			}
 		});
 		
-		
+		installerRecepteurCommande(NouvellePartie.class, new RecepteurCommandeMVC<NouvellePartieRecue>() {
+			@Override
+			public void executerCommandeMVC(NouvellePartieRecue commande) {
+				J.appel(this);
+				
+				nouvellePartieLocale();
+			}
+		});
 		
 		installerRecepteurCommande(Quitter.class, new RecepteurCommandeMVC<QuitterRecue>() {
 			@Override
@@ -64,7 +71,14 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 	
 	
 
+	protected void nouvellePartieLocale() {
+		partie = new PartieLocale();
+		instancierMVCPartieLocale();
+		
+	}
+
 	protected abstract void instancierMVCParametres();
+	protected abstract void instancierMVCPartieLocale();
 	
 	
 
