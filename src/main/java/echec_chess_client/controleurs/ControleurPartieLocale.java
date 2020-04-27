@@ -28,8 +28,11 @@ public abstract class ControleurPartieLocale<V extends VuePartieLocale, A extend
 			public void executerCommandeMVC(JouerCoupRecue commande) {
 				J.appel(this);
 				
-				// TODO: appler le modèle afin de modifier l'information de la partie
-
+				
+				modele.jouerCoup(commande.getCaseDepartColonne(), 
+						commande.getCaseDepartRangee(),
+						commande.getCaseDestinationColonne(),
+						commande.getCaseDestinationRangee());
 			}
 		});
 	}

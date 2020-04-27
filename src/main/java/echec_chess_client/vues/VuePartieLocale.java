@@ -6,5 +6,6 @@ public interface VuePartieLocale extends Vue {
 
 	
 	// TODO: ajouter une méthode d'affichage
+	void afficherPion(int positionPion);
 
 }

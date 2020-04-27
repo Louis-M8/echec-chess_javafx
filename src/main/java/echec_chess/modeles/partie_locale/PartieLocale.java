@@ -9,5 +9,32 @@ import commun.modeles.Modele;
 public class PartieLocale extends Modele<PartieLocaleLectureSeule> implements PartieLocaleLectureSeule {
 	
 	// TODO: stoquer de l'information sur la partie
+	private int positionPion = 0;
+
+	public void jouerCoup(int caseDepartColonne, int caseDepartRangee, int caseDestinationColonne,
+			int caseDestinationRangee) {
+		
+		J.appel(this);
+		
+		if(caseDepartColonne == 0) {
+			
+			positionPion = 1;
+
+		}else if(caseDepartColonne == 1) {
+			
+			positionPion = 2;
+
+		}else if(caseDepartColonne == 2) {
+
+			positionPion = 3;
+		}
+	}
+
+	@Override
+	public int getPositionPion() {
+		J.appel(this);
+		
+		return positionPion;
+	}
 
 }

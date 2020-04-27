@@ -14,6 +14,9 @@ public abstract class AfficheurPartieLocale<V extends VuePartieLocale>
 	@Override
 	public void initialiserAffichage(PartieLocaleLectureSeule partieLectureSeule, VuePartieLocale vue) {
 		J.appel(this);
+		
+		vue.afficherPion(partieLectureSeule.getPositionPion());
+		
 	}
 
 	@Override
@@ -23,5 +26,7 @@ public abstract class AfficheurPartieLocale<V extends VuePartieLocale>
 		// TODO: appeler le modele pour récupérer l'info à afficher
 
 		// TODO: appeler la vue pour afficher cette info
+
+		vue.afficherPion(partieLectureSeule.getPositionPion());
 	}
 }
