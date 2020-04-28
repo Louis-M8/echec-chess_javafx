@@ -1,6 +1,7 @@
 package echec_chess.modeles.partie_locale;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import commun.debogage.J;
@@ -16,7 +17,7 @@ public class PartieLocale extends Modele<PartieLocaleLectureSeule> implements Pa
 		
 		J.appel(this);
 		
-		if(caseDepartColonne == 0 || caseDestinationRangee == 0) {
+		if(caseDepartColonne == 0) {
 			
 			positionPion = 1;
 			

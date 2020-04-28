@@ -7,5 +7,4 @@ Maitre = Pro
 parametres=Options
 quitter=Quit
 pion=Pawn
-echec1=Player 2
-echec2=Player 1
+echec=Chess

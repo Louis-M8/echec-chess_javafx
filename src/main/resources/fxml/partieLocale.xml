@@ -14,5 +14,6 @@
 	<Button fx:id="case01" text=""/>
 	<Button fx:id="case02" text="%pion"/>
 	<Button fx:id="case03" text=""/>
+	
 
 </VBox>

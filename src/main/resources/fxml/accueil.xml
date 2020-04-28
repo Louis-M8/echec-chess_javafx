@@ -29,6 +29,6 @@
         </center>
     </BorderPane>
     <VBox fx:id="conteneurContenu" styleClass="conteneurContenu" VBox.vgrow="ALWAYS" >
-	
+	<Text styleClass="echec" text="%echec"/>
     </VBox> 
 </VBox>

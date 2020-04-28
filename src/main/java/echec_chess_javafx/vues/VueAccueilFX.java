@@ -33,7 +33,7 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 	private MenuItem menuNouvellePartie,  menuAfficherParametres, menuQuitter;
 	
 	@FXML
-	private VBox conteneurContenu, conteneurPartie;
+	private VBox conteneurContenu;
 
 	private QuitterPourEnvoi quitterPourEnvoi;
 	
@@ -114,8 +114,8 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 		
 		Parent parent = chargeur.getParent();
 		
-		conteneurPartie.getChildren().clear();
-		conteneurPartie.getChildren().add(parent);
+		conteneurContenu.getChildren().clear();
+		conteneurContenu.getChildren().add(parent);
 
 		return vuePartieLocale;
 	}
