@@ -22,6 +22,7 @@ public  class ControleursPartieLocaleFX extends ControleurPartieLocale<VuePartie
 	protected void installerReceptionCommandes() {
 		J.appel(this);
 		
+		
 	}
 	
 }

@@ -5,6 +5,9 @@ import commun.debogage.J;
 
 
 
+
+
+
 import commun_client.mvc.controleurs.FabriqueControleur;
 import echec_chess.modeles.difficultes.Parametres;
 import echec_chess_client.controleurs.ControleurAccueil;
@@ -12,7 +15,7 @@ import echec_chess_javafx.afficheurs.AfficheurParametresFX;
 import echec_chess_javafx.vues.VueAccueilFX;
 import echec_chess_javafx.vues.VueParametresFX;
 import echec_chess_javafx.afficheurs.AfficheurPartieLocaleFX;
-import echec_chess_javafx.controleurs.ControleurPartieLocaleFX;
+import echec_chess_javafx.controleurs.ControleursPartieLocaleFX;
 import echec_chess_javafx.vues.VuePartieLocaleFX;
 
 
@@ -46,7 +49,7 @@ public class ControleurAccueilFX extends ControleurAccueil<VueAccueilFX> {
 
 		AfficheurPartieLocaleFX afficheur = new AfficheurPartieLocaleFX();
 
-		FabriqueControleur.creerControleur(ControleurPartieLocaleFX.class, partie, vuePartie, afficheur);
+		FabriqueControleur.creerControleur(ControleursPartieLocaleFX.class, partie, vuePartie, afficheur);
 		
 	}
 
