@@ -69,8 +69,9 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 	}
 
 	
+	
+
 	protected void nouvellePartieLocale() {
-		
 		partie = new PartieLocale();
 		instancierMVCPartieLocale();
 		
@@ -78,6 +79,7 @@ public abstract class ControleurAccueil<V extends VueAccueil> extends Controleur
 
 	protected abstract void instancierMVCParametres();
 	protected abstract void instancierMVCPartieLocale();
+	
 	
 
 

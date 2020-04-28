@@ -6,6 +6,7 @@ Difficile = Hard
 Maitre = Pro
 parametres=Options
 quitter=Quit
-echec=CHESS
+echec1=Player 2
+echec2=Player 1
 
 pion=Pawn

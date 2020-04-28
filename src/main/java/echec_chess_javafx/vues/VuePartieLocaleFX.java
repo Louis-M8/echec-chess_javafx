@@ -109,6 +109,6 @@ public class VuePartieLocaleFX implements VuePartieLocale, Initializable {
 	}
 	
 	// TODO: implanter la méthode d'affichage
-
+    
 
 }

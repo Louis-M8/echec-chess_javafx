@@ -1,6 +1,7 @@
 package echec_chess_client.controleurs;
 
 import commun.debogage.J;
+
 import commun_client.mvc.controleurs.ControleurModeleVue;
 import commun_client.mvc.controleurs.RecepteurCommandeMVC;
 import echec_chess.modeles.partie_locale.PartieLocale;
