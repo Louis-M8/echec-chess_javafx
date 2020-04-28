@@ -16,17 +16,19 @@ public class PartieLocale extends Modele<PartieLocaleLectureSeule> implements Pa
 		
 		J.appel(this);
 		
-		if(caseDepartColonne == 0) {
+		if(caseDepartColonne == 0 || caseDestinationRangee == 0) {
 			
 			positionPion = 1;
+			
 
-		}else if(caseDepartColonne == 1) {
+		}else if(caseDepartColonne == 1 ) {
 			
 			positionPion = 2;
 
 		}else if(caseDepartColonne == 2) {
 
 			positionPion = 3;
+		
 		}
 	}
 
