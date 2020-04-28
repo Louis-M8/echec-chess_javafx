@@ -24,6 +24,7 @@ public abstract class AfficheurPartieLocale<V extends VuePartieLocale>
 		J.appel(this);
 		
 		// TODO: appeler le modele pour récupérer l'info à afficher
+	   
 
 		// TODO: appeler la vue pour afficher cette info
 

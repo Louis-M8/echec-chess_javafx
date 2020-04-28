@@ -5,6 +5,10 @@ import commun.debogage.J;
 
 
 
+
+
+
+
 import commun_client.mvc.controleurs.FabriqueControleur;
 import echec_chess.modeles.difficultes.Parametres;
 import echec_chess_client.controleurs.ControleurAccueil;
@@ -35,9 +39,6 @@ public class ControleurAccueilFX extends ControleurAccueil<VueAccueilFX> {
 		FabriqueControleur.creerControleur(ControleursParametresFX.class, para, vuePara, afficheur);
 		
 	}
-
-
-
 	
 	protected void instancierMVCPartieLocale() {
 		J.appel(this);
@@ -50,4 +51,12 @@ public class ControleurAccueilFX extends ControleurAccueil<VueAccueilFX> {
 		
 	}
 
+
 }
+
+	
+
+
+
+	
+	

@@ -30,14 +30,16 @@ import javafx.scene.layout.VBox;
 public class VueAccueilFX implements VueAccueil, Initializable {
 
 	@FXML
-	private MenuItem menuNouvellePartie, menuAfficherParametres, menuQuitter;
+	private MenuItem menuNouvellePartie,  menuAfficherParametres, menuQuitter;
 	
 	@FXML
 	private VBox conteneurContenu;
 
 	private QuitterPourEnvoi quitterPourEnvoi;
-	private NouvellePartiePourEnvoi nouvellePartiePourEnvoi;
+	
 	private AfficherParametresPourEnvoi afficherParametresPourEnvoi;
+	
+	private NouvellePartiePourEnvoi nouvellePartiePourEnvoi;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -62,6 +64,15 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 	public void installerCapteursEvenementsUsager() {
 		J.appel(this);
 		
+		menuNouvellePartie.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+				
+				nouvellePartiePourEnvoi.envoyerCommande();
+			}
+		});
+		
 		menuAfficherParametres.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
@@ -71,14 +82,7 @@ public class VueAccueilFX implements VueAccueil, Initializable {
 			}
 		});
 		
-		menuNouvellePartie.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				J.appel(this);
-				
-				nouvellePartiePourEnvoi.envoyerCommande();
-			}
-		});
+		
 
 		menuQuitter.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

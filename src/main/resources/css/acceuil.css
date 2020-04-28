@@ -27,9 +27,12 @@
 
 }
 
-.echec{
--fx-font-size:155px;
--fx-font-color:#8a0303;
+.echec1{
+-fx-font-size:35px;
+}
+
+.echec2{
+-fx-font-size:35px;
 }
 
 
