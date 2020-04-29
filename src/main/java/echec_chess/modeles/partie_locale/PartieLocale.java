@@ -30,7 +30,29 @@ public class PartieLocale extends Modele<PartieLocaleLectureSeule> implements Pa
 
 			positionPion = 3;
 		
-		}
+		}else if(caseDepartColonne == 3 ) {
+			
+			positionPion = 4;
+
+		}else if(caseDepartColonne == 4) {
+
+			positionPion = 5;
+		}else if(caseDepartColonne == 5 ) {
+			
+			positionPion = 6;
+
+		}else if(caseDepartColonne == 6) {
+
+			positionPion = 7;
+			}
+		else if(caseDepartColonne == 7 ) {
+			
+			positionPion = 8;
+
+		}else if(caseDepartColonne == 8) {
+
+			positionPion = 9;
+			}
 	}
 
 	@Override

@@ -6,19 +6,19 @@
 <?import javafx.scene.text.*?>
 <?import echec_chess_javafx.vues.composantes.CaseAjustable?>
 <?import echec_chess_javafx.vues.composantes.MonBouton?>
-
+<?import javafx.scene.image.*?>
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal"
     fx:controller="echec_chess_javafx.vues.VueAccueilFX">
    <BorderPane VBox.vgrow="ALWAYS">
         <top>
             <MenuBar>
                 <menus>
-                <Menu styleClass="menu" text="Menu">
+                <Menu styleClass="menu" text="%menu">
                     <items>
-                    <MenuItem fx:id="menuNouvellePartie" styleClass="menu_item" text="Nouvelle Partie"/>
-                    <MenuItem fx:id="menuAfficherParametres" styleClass="menu_item" text="Parametres"/>
+                    <MenuItem fx:id="menuNouvellePartie" styleClass="menu_item" text="%nouvellePartie"/>
+                    <MenuItem fx:id="menuAfficherParametres" styleClass="menu_item" text="%parametres"/>
                     <SeparatorMenuItem/>
-                    <MenuItem fx:id="menuQuitter"  styleClass="menu_item" text="Quitter"/>
+                    <MenuItem fx:id="menuQuitter"  styleClass="menu_item" text="%quitter"/>
                     </items>
                 </Menu>
             </menus>
@@ -30,5 +30,12 @@
     </BorderPane>
     <VBox fx:id="conteneurContenu" styleClass="conteneurContenu" VBox.vgrow="ALWAYS" >
 	<Text styleClass="echec" text="%echec"/>
+	<HBox alignment="center">
+     <ImageView fitHeight="300" fitWidth="300">
+  <image>
+    <Image url="/images/chessPieceAnimation.gif"/>
+  </image>
+  </ImageView>
+  </HBox>
     </VBox> 
 </VBox>
