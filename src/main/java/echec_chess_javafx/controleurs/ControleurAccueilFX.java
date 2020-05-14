@@ -8,10 +8,6 @@ import commun.debogage.J;
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f54eeef8a7ecfa7fb5c556d6e327c26c60fad913
 import commun_client.mvc.controleurs.FabriqueControleur;
 import echec_chess.modeles.difficultes.Parametres;
 import echec_chess_client.controleurs.ControleurAccueil;
