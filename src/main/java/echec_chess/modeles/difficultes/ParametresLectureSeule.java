@@ -8,7 +8,9 @@ import commun.modeles.ModeleLectureSeule;
 public interface ParametresLectureSeule extends ModeleLectureSeule {
 
 	int getDifficulte();
-	
+
+	int getPositionCourantePion();
+
 	
 	
 }

@@ -20,7 +20,7 @@ import javafx.scene.text.Text;
 public class VuePartieLocaleFX implements VuePartieLocale, Initializable {
 	
 	@FXML 
-	private Button case01, case02, case03;
+	private Button case01, case02, case03, case04, case05, case06, case07, case08, case09;
 	private String textePion;
 	
 	private JouerCoupPourEnvoi jouerCoup;
@@ -32,6 +32,12 @@ public class VuePartieLocaleFX implements VuePartieLocale, Initializable {
 		DoitEtre.nonNul(case01);
 		DoitEtre.nonNul(case02);
 		DoitEtre.nonNul(case03);
+		DoitEtre.nonNul(case04);
+		DoitEtre.nonNul(case05);
+		DoitEtre.nonNul(case06);
+		DoitEtre.nonNul(case07);
+		DoitEtre.nonNul(case08);
+		DoitEtre.nonNul(case09);
 		
 		// équivalent de %pion dans le xml
 		textePion = resources.getString("pion");
@@ -77,6 +83,64 @@ public class VuePartieLocaleFX implements VuePartieLocale, Initializable {
 				jouerCoup.envoyerCommande();
 			}
 		});
+		
+		case04.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+
+				jouerCoup.setCaseDepart(3, 3);
+				jouerCoup.envoyerCommande();
+			}
+		});
+		
+		case05.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+
+				jouerCoup.setCaseDepart(4, 4);
+				jouerCoup.envoyerCommande();
+			}
+		});
+		
+		case06.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+
+				jouerCoup.setCaseDepart(5, 5);
+				jouerCoup.envoyerCommande();
+			}
+		});
+		
+		case07.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+
+				jouerCoup.setCaseDepart(6, 6);
+				jouerCoup.envoyerCommande();
+			}
+		});
+		case08.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+
+				jouerCoup.setCaseDepart(7, 7);
+				jouerCoup.envoyerCommande();
+			}
+		});
+		case09.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				J.appel(this);
+
+				jouerCoup.setCaseDepart(8, 8);
+				jouerCoup.envoyerCommande();
+			}
+		});
 	}
 
 	@Override
@@ -93,18 +157,109 @@ public class VuePartieLocaleFX implements VuePartieLocale, Initializable {
 			case01.setText(textePion);
 			case02.setText("");
 			case03.setText("");
+			case04.setText("");
+			case05.setText("");
+			case06.setText("");
+			case07.setText("");
+			case08.setText("");
+			case09.setText("");
 
 		}else if(positionPion == 2) {
 
 			case01.setText("");
 			case02.setText(textePion);
 			case03.setText("");
-
+			case04.setText("");
+			case05.setText("");
+			case06.setText("");
+			case07.setText("");
+			case08.setText("");
+			case09.setText("");
 		}else if(positionPion == 3) {
 
 			case01.setText("");
 			case02.setText("");
 			case03.setText(textePion);
+			case04.setText("");
+			case05.setText("");
+			case06.setText("");
+			case07.setText("");
+			case08.setText("");
+			case09.setText("");
+		}
+		else if(positionPion == 4) {
+
+			case01.setText("");
+			case02.setText("");
+			case03.setText("");
+			case04.setText(textePion);
+			case05.setText("");
+			case06.setText("");
+			case07.setText("");
+			case08.setText("");
+			case09.setText("");
+		}
+		else if(positionPion == 5) {
+
+			case01.setText("");
+			case02.setText("");
+			case03.setText("");
+			case04.setText("");
+			case05.setText(textePion);
+			case06.setText("");
+			case07.setText("");
+			case08.setText("");
+			case09.setText("");
+		}
+		else if(positionPion == 6) {
+
+			case01.setText("");
+			case02.setText("");
+			case03.setText("");
+			case04.setText("");
+			case05.setText("");
+			case06.setText(textePion);
+			case07.setText("");
+			case08.setText("");
+			case09.setText("");
+		}
+		else if(positionPion == 7) {
+
+			case01.setText("");
+			case02.setText("");
+			case03.setText("");
+			case04.setText("");
+			case05.setText("");
+			case06.setText("");
+			case07.setText(textePion);
+			case08.setText("");
+			case09.setText("");
+		}
+		
+		else if(positionPion == 8) {
+
+			case01.setText("");
+			case02.setText("");
+			case03.setText("");
+			case04.setText("");
+			case05.setText("");
+			case06.setText("");
+			case07.setText("");
+			case08.setText(textePion);
+			case09.setText("");
+		}
+		
+		else if(positionPion == 9) {
+
+			case01.setText("");
+			case02.setText("");
+			case03.setText("");
+			case04.setText("");
+			case05.setText("");
+			case06.setText("");
+			case07.setText("");
+			case08.setText("");
+			case09.setText(textePion);
 		}
 	}
 	

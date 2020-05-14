@@ -13,12 +13,12 @@ public class Parametres extends Modele<ParametresLectureSeule> implements Parame
 	
 	Random rand = new Random();
 	int upperbound = 4;
+	int upperRand = 3;
 	
 	private int difficile = rand.nextInt(upperbound);
-	
-
-	
+    private int positionPion = rand.nextInt(upperRand);
 	private int difficulteCourante = difficile;
+	private int positionCourante = positionPion;
 	
 	@Override
 	public int getDifficulte() {
@@ -29,6 +29,14 @@ public class Parametres extends Modele<ParametresLectureSeule> implements Parame
 		
 		
 	}
+
+	@Override
+	public int getPositionCourantePion() {
+		J.appel(this);
+		return positionCourante;
+	}
+	
+	
 
 	
 	

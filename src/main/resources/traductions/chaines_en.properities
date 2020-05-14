@@ -4,9 +4,9 @@ Facile = Easy
 Moyen = Medium
 Difficile = Hard
 Maitre = Pro
+menu= Main Menu
+nouvellePartie=New Game
 parametres=Options
 quitter=Quit
-echec1=Player 2
-echec2=Player 1
-
 pion=Pawn
+echec=Chess

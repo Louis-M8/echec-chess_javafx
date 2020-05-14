@@ -27,13 +27,14 @@
 
 }
 
-.echec1{
+.echec{
 -fx-font-size:35px;
 }
 
-.echec2{
--fx-font-size:35px;
+.right1{
+-fx-alignment : center-right;
 }
+
 
 
 
